@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Orrin">
+        <meta name="description" content="A vending machine.">
+        <meta name="keywords" content="Vending machine">
+        <title>Vending Machine</title>
+        <link rel="stylesheet" href="styles/vending.css">
+        <script src="scripts/vending.js" defer></script>
+    </head>
+    <body>
+        <div class="window window1">
+            <br>
+            <h2>Instructions</h2>
+            <br>
+            <hr>
+            <br>
+            <p>
+                To buy an item from the vending machine, first
+                insert the amount of money specified on the item
+                from your bank into the machine. 
+            </p>
+            <br>
+            <p>
+                Press "Pay" when you're done, or "Return" to receive your money back. 
+                The item won't be purchased until you pay AND then enter the 
+                item's code listed at its bottom.
+            </p>
+        </div>
+        
+        <div class="housing">
+            <h1>Vending Machine</h1>
+            <div class="items">
+                <div id="water"><br>Water <br><br><br>$0.50<br><br><br>1A</div>
+                <div id="fruit-juice"><br>Fruit Juice <br><br><br>$0.50<br><br><br> 2B</div>
+                <div id="veggie-juice"><br>Veggie Juice <br><br><br>$0.50<br><br><br> 3C</div>
+                <div id="soup"><br>Soup <br><br><br>$2.00<br><br><br> 4A</div>
+                <div id="smoothie"><br>Smoothie <br><br><br>$2.00<br><br><br> 5B</div>
+                <div id="yogurt"><br>Yogurt <br><br><br>$2.00<br><br><br> 6C</div>
+                <div id="veggie-chips"><br>Veggie Chips <br><br><br>$1.00<br><br><br> 7A</div>
+                <div id="dried-fruit"><br>Dried Fruit <br><br><br>$1.00<br><br><br> 8B</div>
+                <div id="salad"><br>Salad <br><br><br>$1.00<br><br><br> 9C</div>
+                <div id="gum1"><br>Cinnamon Gum <br><br><br>$0.25<br><br><br> 1D</div>
+                <div id="gum2"><br>Mint Gum <br><br><br>$0.25<br><br><br> 2E</div>
+                <div id="gum3"><br>Fruit Gum <br><br><br>$0.25<br><br><br> 3F</div>
+            </div>
+            <div id="entered-code">__</div>
+            <div id="entered-money">$<span id="money-total"></span></div>
+            <div class="keypad">
+                <button type="button" id="one">1</button>
+                <button type="button" id="two">2</button>
+                <button type="button" id="three">3</button>
+            
+                <button type="button" id="four">4</button>
+                <button type="button" id="five">5</button>
+                <button type="button" id="six">6</button>
+            
+                <button type="button" id="seven">7</button>
+                <button type="button" id="eight">8</button>
+                <button type="button" id="nine">9</button>
+            
+                <button type="button" id="a">A</button>
+                <button type="button" id="b">B</button>
+                <button type="button" id="c">C</button>
+            
+                <button type="button" id="d">D</button>
+                <button type="button" id="e">E</button>
+                <button type="button" id="f">F</button>
+            </div>
+            <div class="pay-return">
+                <button type="button" id="cent25">Insert 25&cent;</button>
+                <button type="button" id="dollar1">Insert $1.00</button>
+                <button type="button" id="pay">Pay</button>
+                <button type="button" id="return">Return</button>
+            </div>
+        </div>
+        <div class="window window2">
+            <br>
+            <h2>Bank &amp; Purchases</h2>
+            <br>
+            <hr>
+            <br>
+            <h3>
+                Total Amount of Money: $<span id="bank"></span>
+            </h3>
+            <br>
+            <h3>Purchase Status:</h3>
+            <ol id="purchase-list">
+                <li>None</li>
+            </ol>
+        </div>
+    </body>
+</html>
